@@ -274,7 +274,7 @@ class MnliProcessor(DataProcessor):
     return examples
 
 
-class MrpcProcessor(DataProcessor):
+class GastricProcessor(DataProcessor):
   """Processor for the MRPC data set (GLUE version)."""
 
   def get_train_examples(self, data_dir):
@@ -744,7 +744,7 @@ def main(_):
   processors = {
       "cola": ColaProcessor,
       "mnli": MnliProcessor,
-      "mrpc": MrpcProcessor,
+      "gast": GastricProcessor,
       "xnli": XnliProcessor,
   }
 
